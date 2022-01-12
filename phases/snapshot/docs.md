@@ -450,6 +450,11 @@ The right to invoke [`sock_shutdown`](#sock_shutdown).
 
 Bit: 28
 
+<a href="#rights.sock_accept" name="rights.sock_accept"></a> `sock_accept`
+Accept incoming connection
+
+Bit: 29
+
 ## <a href="#fd" name="fd"></a> `fd`: `Handle`
 A file descriptor handle.
 

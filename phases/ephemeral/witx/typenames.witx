@@ -278,7 +278,9 @@
     $poll_fd_readwrite
     ;;; The right to invoke `sock_shutdown`.
     $sock_shutdown
-  )
+    ;;; The right to accept an incoming connection
+    $sock_accept
+    )
 )
 
 ;;; A file descriptor handle.

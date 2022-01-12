@@ -462,6 +462,11 @@ The right to invoke `sock_shutdown`.
 
 Bit: 30
 
+<a href="#rights.sock_accept" name="rights.sock_accept"></a> `sock_accept`
+  Accept incoming connection
+
+Bit: 31
+
 ## <a href="#fd" name="fd"></a> `fd`: `Handle`
 A file descriptor handle.
 
@@ -2466,6 +2471,19 @@ Note: This is similar to [`yield`](#yield) in POSIX.
 ### Imports
 #### Memory
 ### Functions
+
+---
+
+#### <a href="#close" name="close"></a> `close(fd: fd) -> errno`
+Close a socket (this is an alias for `fd_close`)
+Note: This is similar to [`close`](#close) in POSIX.
+
+##### Params
+- <a href="#close.fd" name="close.fd"></a> `fd`: [`fd`](#fd)
+  Socket descriptor
+
+##### Results
+- <a href="#close.error" name="close.error"></a> `error`: [`errno`](#errno)
 
 ---
 

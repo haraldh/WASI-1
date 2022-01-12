@@ -45,4 +45,13 @@
     (param $how $sdflags)
     (result $error (expected (error $errno)))
   )
+
+  ;;; Accept a connection on a socket
+  ;;; Note: This is similar to `accept` in POSIX.
+  (@interface func (export "accept")
+    ;;; File descriptor of the socket to be bind
+    (param $fd $fd)
+    (result $error $errno)
+    (result $childfd $fd)
+  )
 )

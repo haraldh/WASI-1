@@ -528,4 +528,16 @@
     (param $how $sdflags)
     (result $error $errno)
   )
+
+  ;;; Accept a connection on a socket
+  ;;; Note: This is similar to `accept` in POSIX.
+  (@interface func (export "accept")
+    ;;; File descriptor of the socket to be bind
+    (param $fd $fd)
+    ;;; The desired values of the file descriptor flags.
+    (param $flags $fdflags)
+    ;;; New socket connection file descriptor
+    (result $error $errno)
+    (result $socket_fd $fd)
+  )
 )
